@@ -1,6 +1,18 @@
+<?php
+    $logeado = false;
+?>
 <div id="menu">
     <ul>
-        <li> Inicio</li>
+        <li> <a href=../index.php>Inicio</a></li>
+        <?php
+            if($logeado==true){
+                echo "<li>Mi Cuenta</li>";
+                echo "<li>Desconectar</li>";
+            }else{
+                echo "<li><a href='../login.html'>Acceder</a></li>";
+                echo "<li>Registrarse</li>";
+            }
+        ?>
         <li> Sobre nosotros </li>
     </ul>
 </div>

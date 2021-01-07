@@ -9,6 +9,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Practica IAWE</title>
+        <link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div id="cabecera">

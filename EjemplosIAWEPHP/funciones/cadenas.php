@@ -11,3 +11,5 @@ function letraCapital($entrada) : string{
     $entrada[0]=strtoupper($entrada[0]);
     return $entrada;
 }
+ 
+
