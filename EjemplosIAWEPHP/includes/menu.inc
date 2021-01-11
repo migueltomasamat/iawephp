@@ -10,7 +10,7 @@
                 echo "<li>Desconectar</li>";
             }else{
                 echo "<li><a href='../login.html'>Acceder</a></li>";
-                echo "<li>Registrarse</li>";
+                echo "<li><a href='../register.php'>Registrarse</a></li>";
             }
         ?>
         <li> Sobre nosotros </li>

@@ -18,6 +18,15 @@ a{
     text-decoration: none;
     
 }
+.formulario{
+    display: grid;
+    
+}
+.lineaformulario{
+    padding: 15px;
+    grid-row-gap: 1em;
+}
+
 #cabecera{
     border: 2px red solid;
 }
@@ -45,3 +54,4 @@ a{
 #menu ul li:hover{
     background-color: #0a70d3;
 }
+
