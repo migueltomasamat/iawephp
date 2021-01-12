@@ -18,8 +18,34 @@ a{
     text-decoration: none;
     
 }
-.formulario{
+.contenido{
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "introduccion formulario formulario";
+    background-color: #047aed;
+    color: white;
+}
+.introducción{
+    grid-area: introduccion;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.introducción h1{
+    font-family: 'Potta One', cursive;
+}
+.introducción h2{
+    font-family: 'Xanh Mono', monospace;
+}
+.formulario{
+    grid-area: formulario;
+    background-color: white;
+    color: #047aed;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 20%;
     
 }
 .lineaformulario{

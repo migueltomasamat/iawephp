@@ -10,6 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Practica IAWE</title>
         <link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Xanh+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="cabecera">
