@@ -84,6 +84,75 @@
                    echo "</br>Se ha entrado en el valor de default";
                    break;
            }
+          
            
-           echo "Este es el resultado".letraCapital($nombrePlanta);
+           
+           
+           $miarray=["base","escolta","alero","ala-pivot","pivot"];
+           
+           echo "<br /> La posición 4 es: $miarray[4]";
+           
+           for($z=0;$z<count($miarray);$z++){
+               echo "<br /> La posición $z es: $miarray[$z]";
+           }
+           
+           foreach($miarray as $posicion){
+               echo "<br /> El nombre de la posición es: $posicion";
+           }
+           
+           $miarray[5]="entrenador";
+           echo "<br /> La posición 5 es: $miarray[5]";
+           
+           
+           $equipos=array(array(),array());
+           
+           //Equipos de la conferencia este
+           $equipos[0][0]="Chicago Bulls";
+           $equipos[0][1]="New York Knicks";
+           $equipos[0][2]="Washignton Wizars";
+           
+           //Equipos de la conferencia Oeste
+           
+           $equipos[1][0]="Golden State Warriors";
+           $equipos[1][1]="Sacramento Kings";
+           $equipos[1][2]="L.A Lakers";
+           
+           for($i=0;$i<2;$i++){
+               echo "<br/> Mostrando los equipos de una conferencia: ";
+               for($z=0;$z<3;$z++){
+                   echo $equipos[$i][$z].", ";
+               }
+           }
+           
+           
+           $sudoku[0][0]=2;
+           $sudoku[0][1]=9;
+           $sudoku[0][2]=5;
+           $sudoku[1][0]=6;
+           $sudoku[1][1]=6;
+           $sudoku[1][2]=6;
+           $sudoku[2][0]=6;
+           $sudoku[2][1]=6;
+           $sudoku[2][2]=6;
+           
+           for($i=0;$i<count($equipos);$i++){
+               echo "<br/>";
+               for($z=0;$z<count($equipos[$i]);$z++){
+                   echo "[".$equipos[$i][$z]."]";
+               }
+           }
+           
+           echo "<br/>";
+           print_r($equipos);
+           
+           echo "<br/>";
+           $posicion = ["1"=>"base","2"=>"escolta", "3"=>"alero", "4"=>"ala-pivot","5"=>"pivot"];
+           $posicion = ["escolta"=>"2", "base"=>"1", "alero"=>"3", "ala-pivot"=>"4","pivot"=>"5"];
+           
+           echo "La posición dos es: $posicion[escolta]<br/>";
+           
+           foreach ($posicion as $clave=>$valor){
+              echo "la posición $clave tiene un valor: ".$valor."<br/>";
+           }
+           
            
