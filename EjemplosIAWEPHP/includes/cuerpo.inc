@@ -1,7 +1,7 @@
 <?php
 //Voy a poner un comentario en PHP
 
-           include '../funciones/cadenas.php';
+           include 'funciones/cadenas.php';
            echo '<p>'; 
            echo 'Hola soy miguel y bienvenidos a mi web Mundo';
            echo '</p>';
