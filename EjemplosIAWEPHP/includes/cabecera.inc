@@ -15,7 +15,7 @@ and open the template in the editor.
     </head>
     <body>
         <div id="cabecera">
-            <div id="logotipo"><img src ="../imagenes/logo.jpg"></div>
+            <div id="logotipo"><img src ="../imagenes/logo.png"></div>
             <div id="presentacion">
                 <h1> Página oficial de Amantes del Panda</h1>
                 <h2> Est. 2020</h2>

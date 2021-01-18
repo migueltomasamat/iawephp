@@ -9,7 +9,7 @@
                 echo "<li>Mi Cuenta</li>";
                 echo "<li>Desconectar</li>";
             }else{
-                echo "<li><a href='../login.html'>Acceder</a></li>";
+                echo "<li><a href='../formularioLogin.php'>Acceder</a></li>";
                 echo "<li><a href='../register.php'>Registrarse</a></li>";
             }
         ?>

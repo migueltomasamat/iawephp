@@ -18,12 +18,17 @@ a{
     text-decoration: none;
     
 }
+body{
+    display: grid;
+    
+}
 .contenido{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "introduccion formulario formulario";
     background-color: #047aed;
     color: white;
+    height: 70%;
 }
 .introducción{
     grid-area: introduccion;
@@ -54,13 +59,23 @@ a{
 }
 
 #cabecera{
-    border: 2px red solid;
+    /*border: 2px red solid;*/
+    background-color: #047aed;
+    color: white;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "imagen titulo titulo";
+    padding-top:3%;
 }
 #cabecera img{
+    grid-area: imagen;
+    padding-left:5%;
+    padding-right: 10%;
     
 }
+
 #menu{
-    border: 1px blue solid;
+    /*border: 1px blue solid;*/
     background-color: #047aed;
 }
 #menu ul{
@@ -68,7 +83,7 @@ a{
 }
 #menu ul li{
     padding: 0.5em;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
 }
 #menu a:hover{
     color:white;
@@ -81,3 +96,34 @@ a{
     background-color: #0a70d3;
 }
 
+.pie{
+    color: white;
+    background-color: #002240;
+    
+}
+.pie .contenedor_pie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.pie .contenedor_pie h1{
+    font-size: 1em;
+}
+.pie .contenedor_pie h2{
+    text-align: center;
+    font-size: 0.7em;
+}
+.pie a:hover{
+    background-color: #0a70d3;
+}
+.pie a:visited{
+    color: white;
+}
+    
+
+.pie .social a{
+    text-decoration: none;
+}
