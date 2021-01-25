@@ -2,6 +2,7 @@
 //Voy a poner un comentario en PHP
 
            include 'funciones/cadenas.php';
+           require 'funciones/ejerciciosfunciones.php';
            echo '<p>'; 
            echo 'Hola soy miguel y bienvenidos a mi web Mundo';
            echo '</p>';
@@ -90,6 +91,8 @@
            
            $miarray=["base","escolta","alero","ala-pivot","pivot"];
            
+           mostrar_array($miarray);
+           
            echo "<br /> La posición 4 es: $miarray[4]";
            
            for($z=0;$z<count($miarray);$z++){
@@ -156,3 +159,11 @@
            }
            
            
+           
+           $con = mysqli_connect('mariadb','miguel','leugim','iawe');
+           
+           if ($con){
+               echo "<br/> Se ha conectado correctamente";
+           }else{
+               echo "<br/> ALERTA GENERAL";
+           }

@@ -11,6 +11,7 @@
             }else{
                 echo "<li><a href='../formularioLogin.php'>Acceder</a></li>";
                 echo "<li><a href='../register.php'>Registrarse</a></li>";
+                echo "<li><a href='../ejemploschorras/formularioEntrenador.php'>EjemploEntrenador</a></li>";
             }
         ?>
         <li> Sobre nosotros </li>
