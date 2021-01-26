@@ -54,6 +54,34 @@
     }
     
     
+    $sql= "SELECT * FROM jugador";
+    
+    
+    $resultConsulta = mysqli_query($con, "SELECT * FROM jugador");
+    
+    while ($fila = mysqli_fetch_array($resultConsulta)){
+        echo "<table border=1px black>";
+        echo "<tr>";
+        echo "<td>".$fila['codigo_jug']."</td>";
+        echo "<td>".$fila['nombre']."</td>";
+        echo "<td>".$fila['posicion']."</td>";
+        echo "<td>".$fila['peso']."</td>";
+        echo "<td>".$fila['fecha_nac']."</td>";
+        echo "</tr>";
+        echo "</table>";
+    }
+    
+    
+    $sqlagregado = "SELECT avg(edad) FROM entrenador E";
+    
+    $resultadoMediaEntrenador = mysqli_query($con, $sqlagregado);
+    
+    while ($fila = mysqli_fetch_array($resultadoMediaEntrenador)){
+        echo "<br/> La media de edad de los entrenadores es ".$fila[0];
+    }
+    
+    
+    
     
     
     include '../includes/pie.inc';
