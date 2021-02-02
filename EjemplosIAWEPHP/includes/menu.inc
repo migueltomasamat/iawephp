@@ -1,5 +1,7 @@
 <?php
-    $logeado = false;
+    
+    if (isset($_SESSION["logeado"]))
+        $logeado = $_SESSION["logeado"];
 ?>
 <div id="menu">
     <ul>
