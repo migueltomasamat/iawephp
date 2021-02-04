@@ -18,12 +18,12 @@
             <h2>Introduce tus datos y pasa a formar parte de nuestra familia</h2>
         </div>
         
-        <form class="formulario" action="accionRegistro.php" method="get">
+        <form class="formulario" action="accionRegistro.php" method="post">
 
             <ul class="interiorformulario">
                 <li class="lineaformulario">
                     <label for="username">Elija un nombre de usuario</label>
-                    <input type="text" id="username" name="nombre"  value=""  required="true" placeholder="Introduce tu nombre"/>
+                    <input type="text" id="username" name="nick"  value=""  required="true" placeholder="Introduce tu nombre"/>
                 </li>
                 <li class="lineaformulario">
                     <label for="pass">Contraseña</label>
@@ -51,11 +51,11 @@
                 </li>
                 <li class="lineaformulario">
                     <label for="address">Dirección</label>
-                    <input type="text" id="address" name="dirección" value=""  required="true" placeholder="Introduce la dirección de tu vivienda habitual"/>
+                    <input type="text" id="address" name="direccion" value=""  required="true" placeholder="Introduce la dirección de tu vivienda habitual"/>
                 </li>
                 <li class="lineaformulario">
                     <label for="city">Población</label>
-                    <input type="text" id="city" name="población" value=""  required="true" placeholder="Introduce la población donde resides"/>
+                    <input type="text" id="city" name="poblacion" value=""  required="true" placeholder="Introduce la población donde resides"/>
                 </li>
                 <li class="lineaformulario">
                     <label for="state">Provincia</label>
@@ -70,7 +70,7 @@
 
                 <li class="lineaformulario">
                     <label for="comunity">Comunidad Autonoma</label>
-                    <select name="Comunidad Autonoma" id="comunity">
+                    <select name="comunidad_autonoma" id="comunity">
                         <?php
                             foreach ($comunidades as $comunidad){
                                 echo "<option value='$comunidad'>$comunidad</option>";
@@ -85,8 +85,8 @@
                 <li class="lineaformulario">
                     <fieldset>
                         <legend>Desea recibir comunicaciones comerciales</legend>
-                    <input type="radio" name="publicidad" value="Si" checked="checked" />Recibir Correos Infomativos
-                    <input type="radio" name="publicidad" value="No" /> No recibir información
+                    <input type="radio" name="publicidad" value=1 checked="checked" />Recibir Correos Infomativos
+                    <input type="radio" name="publicidad" value=0 /> No recibir información
                     </fieldset>
                 </li>
 
