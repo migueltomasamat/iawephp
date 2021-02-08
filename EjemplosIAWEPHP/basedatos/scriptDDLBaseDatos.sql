@@ -15,7 +15,7 @@ drop table if exists usuario;
 //
 create table usuario(
     id_usu int AUTO_INCREMENT primary key,
-    nombre_usu varChar(30),
+    nombre_usu varChar(30) ,
     pass varchar(255),
     nombre varchar(50),
     apellidos varchar(100),
@@ -26,6 +26,7 @@ create table usuario(
     provincia varchar(50),
     comunidad_autonoma varchar(50),
     fecha_nac date,
-    spam boolean default false  
+    spam boolean default false,
+    unique(nombre_usu)
 );
 //

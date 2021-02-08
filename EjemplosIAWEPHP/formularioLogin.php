@@ -7,7 +7,7 @@
             <h1>Inicio de Sesión</h1>
             <h2>Introduce tu nombre de usuario y contraseña</h2>
         </div>
-    <form class="formulario" action="login.php" method="get">
+    <form class="formulario" action="login.php" method="post">
         <ul>
             <li>
                 <label for="usuario"> Usuario:</label>
